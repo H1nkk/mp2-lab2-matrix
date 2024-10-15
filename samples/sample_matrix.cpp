@@ -23,6 +23,7 @@ void main()
       b[i][j] = (i * 10 + j) * 100;
     }
   c = a + b;
+  TDynamicMatrix<int> d(c);
   cout << "Matrix a = " << endl << a << endl;
   cout << "Matrix b = " << endl << b << endl;
   cout << "Matrix c = a + b" << endl << c << endl;
