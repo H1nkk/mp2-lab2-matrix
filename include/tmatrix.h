@@ -258,7 +258,7 @@ public:
 	// матрично-скалярные операции
 	TDynamicMatrix operator*(const T& val)
 	{
-		TDynamicMatrix<T> tmp = *this; // aaaaaaaaaaaaaaaaaaaaaaaaaaaaa проверить норм ли работает копирование указателей
+		TDynamicMatrix<T> tmp = *this;
 		for (int i = 0; i < sz; i++)
 			for (int j = 0; j < sz; j++)
 				tmp.pMem[i][j] *= val;
